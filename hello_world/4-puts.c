@@ -1,6 +1,5 @@
 #include <stdio.h>
-/* Main function
-*/
+/* Main function */
 int main(void)
 {
 /* Adding a comment */
