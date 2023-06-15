@@ -16,7 +16,7 @@ int main(void)
 		putchar(i != 8 ? ',' : ',');
 		putchar(i != 8 ? ' ' : ' ');
 	}
-
+		putchar(' ');
 	}
 
 	return 0;
