@@ -4,7 +4,7 @@
 *
 * Return: 0 on successful execution
 */
-int main()
+int main(void)
 {
 int i;
 
@@ -15,5 +15,5 @@ putchar(i + '0');
 
 putchar('\n');
 
-return 0;
+return (0);
 }
