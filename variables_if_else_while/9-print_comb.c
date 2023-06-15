@@ -17,7 +17,6 @@ int main(void)
 		putchar(i != 8 ? ' ' : ' ');
 	}
 
-	putchar('\n');
 	}
 
 	return 0;
