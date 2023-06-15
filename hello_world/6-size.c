@@ -3,8 +3,8 @@ int main(void)
 {
 char chatType;
 int intType;
-longint longintType;
-longlongint longlongintType;
+long int longintType;
+long long int longlongintType;
 float floatType;
 printf("Size of char: %zu byte\n", sizeof(charType));
 printf("Size of int: %zu bytes\n", sizeof(intType));
