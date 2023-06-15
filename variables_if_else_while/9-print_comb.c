@@ -13,10 +13,10 @@ int main(void)
 
 		if (i != 9)
 		{
-		putchar(i != 8 ? ',' : ',');
-		putchar(i != 8 ? ' ' : ' ');
-	}
+		putchar(',');
 		putchar(' ');
+	}
+
 	}
 
 	return 0;
