@@ -6,17 +6,14 @@
 */
 int main(void)
 {
-	char caracter;
-	caracter = 'a';
+	char character;
 
-	while (caracter <= 'z')
+	for (character = 'a'; character <= 'z'; character++)
 	{
-	putchar("%c \n", caracter);
-	if (caracter == 'n')
-	{
-		putchar("ñ \n");
+		putchar(character);
 	}
-	caracter++;
-	}
+
+	putchar('\n');
+
 	return (0);
 }
