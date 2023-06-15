@@ -1,4 +1,4 @@
-#include<libc6-dev-i386>
+#include<stdio.h>
 int main(void)
 {
 char chatType;
