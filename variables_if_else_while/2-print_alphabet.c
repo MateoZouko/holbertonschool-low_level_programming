@@ -6,10 +6,17 @@
 */
 int main(void)
 {
-	char abecedario;
-	abecedario = "abcdefghijklmnñopqrstuvwxyz";
+	char caracter;
+	caracter = 'a';
 
-	for (int i = 0; i < 27, i++)
-	putchar("%c \n", abecedario[i]);
+	while (caracter <= 'z')
+	{
+	putchar("%c \n", caracter);
+	if (caracter == 'n')
+	{
+		putchar("ñ \n");
+	}
+	caracter++;
+	}
 	return (0);
 }
