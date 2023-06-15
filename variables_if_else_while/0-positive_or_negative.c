@@ -10,15 +10,16 @@ int main(void)
 	int n;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	printf("The number: %i\n");
 	if (n > 0)
 	{
-		return (is positive);
-	}if else (n = 0)
+		printf("is positive\n");
+	} else if (n = 0)
 	{
-		return (is zero);
+		printf("is zero\n");
 	} else
 	{
-		return (is negative);
+		printf("is negative\n");
 	}
 	return (0);
 }
