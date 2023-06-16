@@ -1,13 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - check the code
- *
+ * _abs - check the code
+ * @r: number.
  * Return: Always 0.
  */
 int _abs(int r)
 {
-	printf("%e", r);
+	printf("%u", r);
 
 return (0);
 }
