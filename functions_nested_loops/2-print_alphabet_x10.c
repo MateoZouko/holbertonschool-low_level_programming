@@ -3,20 +3,24 @@
 #include "main.h"
 
 /**
-* print_alphabet - check the code
+* print_alphabet_x10 - check the code
 *
 * Return: Always 0.
 */
 void print_alphabet_x10(void)
 {
-	int i;
+	int i = 0;
+	char c;
 
-	for (i = 0; i < 26; i++)
+	while (i < 10)
 	{
-		_putchar ('a' + i);
+		c = 'a';
+		while (c <= 'z')
+	{
+		_putchar (c);
+		c++;
 	}
-
 	_putchar ('\n');
-
-		return;
+	i++;
+	}
 }
