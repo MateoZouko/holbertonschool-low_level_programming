@@ -7,9 +7,7 @@
 */
 int main(void)
 {
-char str;
-str = "_putchar\n";
-
+char *str = "_putchar\n";
 
 write(1, str, 9);
 
