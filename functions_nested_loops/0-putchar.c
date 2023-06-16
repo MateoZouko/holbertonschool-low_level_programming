@@ -1,11 +1,14 @@
-#include <stdio.h>
-#include <unistd.h>
+#include "main.h"
 /**
 * main - this is the main
 *
 * Return: 0 on successful execution
 */
-int _putchar(char a)
+int _putchar(void)
 {
-return (write(1, &a, 1));
+char *str = "_putchar\n";
+
+write(1, str, 9);
+
+return (0);
 }
