@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
 * main - this is the main
 *
@@ -6,14 +7,11 @@
 */
 int main(void)
 {
-char i;
-i = _putchar;
+char str;
+str = "_putchar\n";
 
-{
-write(i);
-}
 
-write('\n');
+write(1, str, 9);
 
 return (0);
 }
