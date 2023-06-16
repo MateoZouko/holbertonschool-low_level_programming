@@ -5,10 +5,8 @@
  *
  * Return: Always 0.
  */
-int _abs(int)
+int _abs(int r)
 {
-	double r;
-
 	printf("%e", r);
 
 return (0);
