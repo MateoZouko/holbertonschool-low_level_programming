@@ -5,11 +5,7 @@
 *
 * Return: 0 on successful execution
 */
-int main(void)
+int _putchar(char a)
 {
-char *str = "_putchar\n";
-
-write(1, str, 9);
-
-return (0);
+return (write(1, &a, 1));
 }
