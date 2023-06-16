@@ -6,13 +6,14 @@
 */
 int main(void)
 {
-char _putchar;
+char i;
+i = _putchar;
 
 {
-putchar(i);
+write(i);
 }
 
-putchar('\n');
+write('\n');
 
 return (0);
 }
