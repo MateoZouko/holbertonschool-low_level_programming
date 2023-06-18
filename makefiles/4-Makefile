@@ -10,17 +10,16 @@ $(NAME): $(OBJ)
 
 all: $(NAME)
 
-.PHONY: all
 
 clean:
-	$(RM) -f *~ *.swp
+	$(RM) -f *~ $(OBJ)
 
 oclean:
-	$(RM) $(OBJ)/*.o
+	$(RM) $(OBJ)
 
 fclean:
-	$(RM) $(NAME)/*~ *.swp
+	clean oclean
 
 re:
-	oclean $(NAME)
+	oclean all
 
