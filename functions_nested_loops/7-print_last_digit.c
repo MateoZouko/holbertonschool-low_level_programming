@@ -2,15 +2,22 @@
 /**
  * print_last_digit - check the code
  * @n: number.
- * Return: Always 0.
+ * Return: last digit.
  */
 int print_last_digit(int n)
 {
-	int c;
+	int nv;
 
-	c = n % 10;
-
-	_putchar(c);
-
-	return (0);
+	if (n < 0)
+	{
+		nv = -1 * (n % 10);
+		_putchar(nv);
+		return (nv);
+	}
+	else
+	{
+		nv = n % 10;
+		_putchar(nv);
+		return (nv);
+	}
 }
