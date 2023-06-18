@@ -9,9 +9,5 @@
  */
 int add(int a, int b)
 {
-	int c;
-
-	c = add(a, b);
-	printf("%i\n", c);
-	return (0);
+	return (a + b);
 }
