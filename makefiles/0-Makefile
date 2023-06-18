@@ -1,5 +1,5 @@
 school: main.c
-	gcc -0 scholl main.c
+	gcc -o school main.c
 
 all: school
 
