@@ -16,5 +16,7 @@ oclean:
 
 fclean:	clean oclean
 
+.PHONNY: re
+
 re:	oclean all
 
