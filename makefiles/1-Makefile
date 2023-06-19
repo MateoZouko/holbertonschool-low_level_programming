@@ -6,4 +6,3 @@ school: $(SRC)
 
 all: school
 
-.PHONY: all
