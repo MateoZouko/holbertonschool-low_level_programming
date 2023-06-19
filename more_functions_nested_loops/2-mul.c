@@ -12,6 +12,5 @@ int mul(int a, int b)
 
 	c = a * b;
 
-	printf("%i\n", c);
-	return (0);
+	return (c);
 }
