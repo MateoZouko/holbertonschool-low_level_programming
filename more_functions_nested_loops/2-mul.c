@@ -1,12 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * mu - check code.
+ * mul - check code.
  * @a: integrer.
  * @b: integrer.
  * Return: Always.
  */
-int mu(int a, int b)
+int mul(int a, int b)
 {
 	int c;
 
