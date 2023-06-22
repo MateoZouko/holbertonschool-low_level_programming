@@ -9,15 +9,20 @@ rev_string(char *s)
 		return;
 	}
 
-	int l = 0;
+	int l;
+
+	l = 0;
 
 	while (s[l] != '\0')
 	{
 		l++;
 	}
 
-	int z = 0;
-	int e = l - 1;
+	int z, e;
+
+	z = 0;
+
+	e = l - 1;
 
 	while (z < e)
 	{
