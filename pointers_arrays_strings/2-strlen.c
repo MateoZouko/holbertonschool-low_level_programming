@@ -6,5 +6,6 @@ _strlen(char *s)
 {
 	int length = _strlen(s);
 
-	return (length);
+	printf("%d", length);
+	return (0);
 }
