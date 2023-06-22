@@ -10,6 +10,8 @@ rev_string(char *s)
 	}
 
 	int l;
+	int z, e;
+	char t;
 
 	l = 0;
 
@@ -18,16 +20,13 @@ rev_string(char *s)
 		l++;
 	}
 
-	int z, e;
-
 	z = 0;
 
 	e = l - 1;
 
 	while (z < e)
 	{
-		char t = s[z];
-
+		t = s[z];
 		s[z] = s[e];
 		s[e] = t;
 
