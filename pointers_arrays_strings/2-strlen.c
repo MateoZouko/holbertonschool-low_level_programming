@@ -4,6 +4,7 @@
 int
 _strlen(char *s)
 {
-	size_t _strlen(const char *s);
-	return (0);
+	int length = _strlen(s);
+
+	return (length);
 }
