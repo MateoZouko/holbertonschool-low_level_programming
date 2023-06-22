@@ -3,8 +3,13 @@
 void
 puts2(char *str)
 {
-	char c;
+	int i = 0, l = 0;
 
-	for (c = 0; c != '\0'; c++)
-		_putchar ('c');
+	while (str[i])
+		l++;
+
+	for (i = 0; i < l; i += 2)
+		_putchar (str[i]);
+
+	_putchar('\n');
 }
