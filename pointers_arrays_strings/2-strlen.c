@@ -3,5 +3,10 @@
 int
 _strlen(char *s)
 {
-	return (_strlen(s));
+	int length = 0;
+
+	while (*s++)
+		length++;
+
+	return (length);
 }
