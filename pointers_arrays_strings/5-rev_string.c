@@ -4,14 +4,14 @@
 void
 rev_string(char *s)
 {
+	int l = 0;
+	int z, e;
+	char t;
+
 	if (s == NULL)
 	{
 		return;
 	}
-
-	int l = 0;
-	int z, e;
-	char t;
 
 	while (s[l] != '\0')
 	{
