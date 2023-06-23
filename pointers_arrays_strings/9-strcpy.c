@@ -4,9 +4,13 @@
 char
 *_strcpy(char *dest, char *src)
 {
-	int c = *src;
+	int c = 0;
 
-	*dest = c;
+	while (src[c])
+	{
+		dest[c] = src[c];
+		c++;
+	}
 
-	return(dest);
+	return (dest);
 }
