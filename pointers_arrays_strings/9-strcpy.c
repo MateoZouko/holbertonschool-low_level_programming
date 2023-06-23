@@ -4,6 +4,9 @@
 char
 *_strcpy(char *dest, char *src)
 {
-	_strcpy(src, dest);
-	printf("%s", dest);
+	int c = *src;
+
+	*dest = c;
+
+	return(dest);
 }
