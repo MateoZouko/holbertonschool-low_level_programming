@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 char
-*_strcpy(char *dest,const char *src)
+*_strcpy(char *dest, const char *src)
 {
 	int c = 0;
 
