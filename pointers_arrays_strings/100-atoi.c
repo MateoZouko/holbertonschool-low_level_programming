@@ -2,24 +2,27 @@
 int
 _atoi(char *s)
 {
-	int a = 0;
-	int b = 0;
-	int c = -1;
-	int d = 0;
+	int a;
+	int b, c;
 
-	while (s[b] != '\0' && d == 0)
+	b = 0;
+	c = -1;
+	for (a = 0; s[a] != '\0'; a++)
 	{
-		if (s[b] == '-')
+		if (s[a] == '-')
 			c *= -1;
 
-		while (s[b] >= '0' && s[b] <= '9' && d == 0)
+		if (s[a] > 47 && s[a] < 58)
 		{
-			a = (a * 10 + (s[b] - 48));
-			if (!(s[b + 1] >= '0' && s[b + 1] <= '9'))
-				d = 1;
-			b++;
+			if (b < 0)
+				b = (b * 10) - (s[a] - '0');
+			else
+				b = (s[a] - '0') * -1;
+			if (s[a + 1] < 48 || s[a + 1] > 57)
+				break;
 		}
-		b++;
 	}
-	return (a * c);
+	if (c < 0)
+		b *= -1;
+	return (b);
 }
