@@ -4,7 +4,7 @@ _atoi(char *s)
 {
 	int a = 0;
 	int b = 0;
-	int c = 1;
+	int c = -1;
 	int d = 0;
 
 	while (s[b] != '\0' && d == 0)
