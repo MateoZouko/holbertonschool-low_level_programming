@@ -6,7 +6,7 @@ char
 {
 	int c = 0;
 
-	while (src[c])
+	while ((src[c]) != '\0')
 	{
 		dest[c] = src[c];
 		c++;
