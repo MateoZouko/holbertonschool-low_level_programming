@@ -3,9 +3,9 @@
 char
 *_strncat(char *dest, char *src, int n)
 {
-	int l = 0;
-	int i;
+	int l, i;
 
+	l = 0;
 	while (dest[l] < '\0')
 	{
 		l++;
