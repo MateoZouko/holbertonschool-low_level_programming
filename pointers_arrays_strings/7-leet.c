@@ -10,22 +10,17 @@ char
 
 	while (*str != '\0')
 	{
-		int b = 0;
+		char c = *a;
 
-		while (b < 5)
+		for (int i = 0; i < 5; i++)
 		{
-		if (*str == remp[b][0] || *a == remp[b][0] - ('a' - 'A'))
+		if (c == remp[i][0] || c == remp[i][0] - ('a' - 'A'))
 		{
-		*a = remp[b][1];
+		*a = remp[i][1];
 	break;
 		}
-		b++;
 		}
 		a++;
-		str++;
 	}
-	printf("%s\n", str);
-	printf("%s\n", str);
-
 return (str);
 }
