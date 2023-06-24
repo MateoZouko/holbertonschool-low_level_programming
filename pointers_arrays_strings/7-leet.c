@@ -8,7 +8,7 @@ char
 	char remp[5][2] = {{'a', '4'}, {'e', '3'},
 		{'o', '0'}, {'t', '7'}, {'l', '1'}};
 
-	while (*str != '\0')
+	while (*a != '\0')
 	{
 		char c = *a;
 		int i;
@@ -18,7 +18,7 @@ char
 		if (c == remp[i][0] || c == remp[i][0] - ('a' - 'A'))
 		{
 		*a = remp[i][1];
-	break;
+		break;
 		}
 		}
 		a++;
