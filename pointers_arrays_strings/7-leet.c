@@ -11,8 +11,9 @@ char
 	while (*str != '\0')
 	{
 		char c = *a;
+		int i;
 
-		for (int i = 0; i < 5; i++)
+		for (i = 0; i < 5; i++)
 		{
 		if (c == remp[i][0] || c == remp[i][0] - ('a' - 'A'))
 		{
