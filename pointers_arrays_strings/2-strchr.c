@@ -12,5 +12,5 @@ char
 		}
 		s++;
 	}
-		return (NULL);
+	return (NULL);
 }
