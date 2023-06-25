@@ -4,15 +4,11 @@
 char
 *_memcpy(char *dest, char *src, unsigned int n)
 {
-	int i = 0;
+	unsigned int i;
 
-	char *newsrc = (char *)src;
-	char *newdest = (char *)dest;
-
-	while (i < n)
+	for (i = 0; i < n; i++)
 	{
-		newdest[i] = newsrc[i];
-		i++;
+		dest[i] = src[i];
 	}
-	return (newdest);
+	return (dest);
 }
