@@ -6,20 +6,9 @@ char
 {
 	unsigned int i;
 
-	i = 0;
-
-	while (i < n)
+	for (i = 0; i < n; i++)
 	{
-		if (i % 10)
-		{
-			printf(" ");
-		}
-		if (!(i % 10) && i)
-		{
-			printf("\n");
-		}
-		printf("0x%02x", s[i]);
-		i++;
+		s[i] = b;
 	}
-	return ("\n");
+	return (s);
 }
