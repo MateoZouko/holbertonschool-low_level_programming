@@ -10,7 +10,14 @@ print_chessboard(char (*a)[8])
 	{
 		for (j = 0; j < 8; j++)
 		{
+			if (a[i][j] != ' ')
+			{
 			printf("%c ", a[i][j]);
+			}
+			else
+			{
+				printf(" ");
+			}
 		}
 		printf("\n");
 	}
