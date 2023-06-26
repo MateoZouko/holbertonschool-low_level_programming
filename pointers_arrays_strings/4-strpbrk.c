@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 char
-*_strpbk(char *s, char *accept)
+*_strpbrk(char *s, char *accept)
 {
 	while (*s)
 	{
