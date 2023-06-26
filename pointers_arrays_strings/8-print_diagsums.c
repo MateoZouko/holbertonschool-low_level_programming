@@ -13,6 +13,6 @@ print_diagsums(int *a, int size)
 		c += *(a + i * size + i);
 		b += *(a + i * size + (size - 1 - i));
 	}
-	printf("%d\n", c);
+	printf("%d, ", c);
 	printf("%d\n", b);
 }
