@@ -1,1 +1,2 @@
-readme for C.
+readme for pointers.
+
