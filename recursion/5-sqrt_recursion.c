@@ -2,26 +2,31 @@
 #include <stdio.h>
 
 int
+aux(int a, int b)
+{
+	if ((b * b) == a)
+		return (b);
+
+	if (b == a / 2)
+		return (-1);
+
+	return (aux(a, b + 1));
+}
+
+int
 _sqrt_recursion(int n)
 {
-	int sqrt = _sqrt_recursion(n - 1);
+	int b = 0;
 
 	if (n < 0)
 	{
 		return (-1);
 	}
 
-	if (n == 0)
+	if (n == 1)
 	{
-		return (0);
+		return (1);
 	}
 
-	if (sqrt == -1)
-	{
-		return (-1);
-	}
-	else
-	{
-		return (sqrt + 1);
-	}
+	return (aux(n, b));
 }
