@@ -1,21 +1,9 @@
 #include <stdio.h>
-#include <string.h>
 
 int
-main(int argc, char *argv[])
+main(int __attribute__((__unused__)) argc, char *argv[])
 {
-	const char *programName = strrchr(argv[0], '/');
-
-	if (programName == NULL)
-	{
-		programName = argv[0];
-	}
-	else
-	{
-		programName++;
-	}
-
-	printf("%s\n", programName);
+	printf("%s\n", argv[0]);
 
 		return (0);
 }
