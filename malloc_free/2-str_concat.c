@@ -1,31 +1,35 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include <stdio.h>
 
 char
 *str_concat(char *s1, char *s2)
 {
-	char *p;
-	int length, lengthtotal;
+	char *concat_str;
+	int i, conc_ind, length;
 
-	if (!s1 || !s2)
-		return (NULL);
+	conc_ind = 0;
+	length = 0;
 
-	while (s1[length] != '\0' && s2[length] != '\0')
-	{
+	if (s1 == NULL)
+		s1 = "";
+
+	if (s2 == NULL)
+		s2 = "";
+
+	for (i = 0; s1[i] || s2[i]; i++)
 		length++;
-	}
 
-	lengthtotal = length + 1;
+	concat_str = malloc(sizeof(char) * length);
 
-	p = malloc((lengthtotal) * sizeof(char));
-
-	if (!p)
+	if (concat_str == NULL)
 		return (NULL);
 
-	strcpy(p, s1);
-	strcat(p, s2);
+	for (i = 0; s1[i]; i++)
+		concat_str[conc_ind++] = s1[i];
 
-	return (p);
+	for (i = 0; s2[i]; i++)
+		concat_str[conc_ind++] = s2[i];
+
+	return (concat_str);
 }
