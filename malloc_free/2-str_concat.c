@@ -17,13 +17,13 @@ char
 		length++;
 	}
 
-	p = malloc((length + 1) * sizeof(char **));
+	p = malloc((length + 1) * sizeof(char *));
 
 	if (!p)
 		return (NULL);
 
-	strcpy(s1, p);
-	strcat(s2, p);
+	strcpy(p, s1);
+	strcat(p, s2);
 
 	p[length] = '\0';
 
