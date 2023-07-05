@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 char
-*strdup(char *str)
+*_strdup(char *str)
 {
 	int i;
 	char *dup;
