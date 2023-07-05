@@ -27,7 +27,7 @@ char
 	if (array == NULL)
 	{
 		return (NULL);
-	}
+	} /* Si el array es nulo que me retorne a nulo.*/
 
 	for (i = 0; i < size; i++)
 	{
