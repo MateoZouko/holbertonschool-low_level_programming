@@ -35,24 +35,3 @@ char
 	}
 	return (array); /*Retorna el puntero al array*/
 }
-
-int
-main(void)
-{
-	char *buffer;
-
-	buffer = create_array(98, 'H');
-	/**
-	 * LLamo a funcion anterior (create_array) para crear un array de
-	 * 98 caracteres 'H'
-	 */
-	if (buffer == NULL)
-	{
-		printf("Failed to allocate memory\n"); /*Imprime si malloc falla*/
-		return (1);
-	}
-
-	free(buffer); /*Libera la memoria asignada al array*/
-
-	return (0);
-}
