@@ -7,7 +7,7 @@ char
 *str_concat(char *s1, char *s2)
 {
 	char *p;
-	int length;
+	int length, lengthtotal;
 
 	if (!s1 || !s2)
 		return (NULL);
@@ -17,7 +17,9 @@ char
 		length++;
 	}
 
-	p = malloc((length + 1) * sizeof(char));
+	lengthtotal = length + 1;
+
+	p = malloc((lengthtotal) * sizeof(char));
 
 	if (!p)
 		return (NULL);
