@@ -7,15 +7,22 @@ char
 *str_concat(char *s1, char *s2)
 {
 	char *p;
-	int length = 0;
+	int length1, length2, length;
 
 	if (!s1 || !s2)
 		return (NULL);
 
-	while (s1[length] != '\0' && s2[length] != '\0')
+	while (s1[length1] != '\0')
 	{
-		length++;
+		length1++;
 	}
+
+	while (s2[length2] != '\0')
+	{
+		length2++;
+	}
+
+	length = length1 + length2;
 
 	p = malloc((length + 1) * sizeof(char));
 
