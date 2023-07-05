@@ -25,7 +25,7 @@ char
 	strcpy(p, s1);
 	strcat(p, s2);
 
-	p[length] = '\0';
+	p[length + strlen(s2)] = '\0';
 
 	return (p);
 }
