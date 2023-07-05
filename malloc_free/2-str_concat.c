@@ -17,7 +17,7 @@ char
 		length++;
 	}
 
-	p = malloc((length + 1) * sizeof(char *));
+	p = malloc((length + 1) * sizeof(char **));
 
 	if (!p)
 		return (NULL);
