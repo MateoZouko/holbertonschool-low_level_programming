@@ -18,9 +18,7 @@ char
 		s2 = "";
 
 	if (n >= len2)
-	{
-	   n = len2;
-	}
+		n = len2;
 
 	if (str == NULL)
 		return (NULL);
