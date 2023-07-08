@@ -9,7 +9,6 @@ char
 	unsigned int len1 = strlen(s1);
 	unsigned int len2 = strlen(s2);
 	unsigned int str_length = len1 + n;
-	char *str = malloc(sizeof(char) * (str_length + 1));
 
 	if (s1 == NULL)
 		s1 = " ";
@@ -19,6 +18,8 @@ char
 
 	if (n >= len2)
 		n = len2;
+
+	char *str = malloc(sizeof(char) * (str_length + 1));
 
 	if (str == NULL)
 		return (NULL);
