@@ -1,33 +1,35 @@
-#include <stdio.h>
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
 
 char
 *string_nconcat(char *s1, char *s2, unsigned int n)
 {
+char *concat;
+	unsigned int len = n, index;
+
 	if (s1 == NULL)
 		s1 = "";
 
 	if (s2 == NULL)
 		s2 = "";
 
-	unsigned int len1 = strlen(s1);
-	unsigned int len2 = strlen(s2);
-	unsigned int str_length = len1 + n;
-	char *str;
+	for (index = 0; s1[index]; index++)
+		len++;
 
-	if (n >= len2)
-		n = len2;
+	concat = malloc(sizeof(char) * (len + 1));
 
-	str = malloc(sizeof(char) * (str_length + 1));
-
-	if (str == NULL)
+	if (concat == NULL)
 		return (NULL);
 
-	strncpy(str, s1, len1);
-	strncpy(str + len1, s2, n);
-	str[str_length] = '\0';
+	len = 0;
 
-	return (str);
+	for (index = 0; s1[index]; index++)
+		concat[len++] = s1[index];
+
+	for (index = 0; s2[index] && index < n; index++)
+		concat[len++] = s2[index];
+
+	concat[len] = '\0';
+
+	return (concat);
 }
