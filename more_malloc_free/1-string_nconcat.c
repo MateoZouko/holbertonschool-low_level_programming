@@ -12,10 +12,10 @@ char
 	char *str = malloc(sizeof(char) * (str_length + 1));
 
 	if (s1 == NULL)
-		s1 = "";
+		s1 = " ";
 
 	if (s2 == NULL)
-		s2 = "";
+		s2 = " ";
 
 	if (n >= len2)
 		n = len2;
