@@ -9,15 +9,15 @@
 void print_array(int *array, int left, int right)
 {
 
-    while (left <= right)
-    {
-        if (left < right)
-            printf("%d, ", array[left]);
-        else
-            printf("%d", array[left]);
-        left = left + 1;
-    }
-    printf("\n");
+	while (left <= right)
+	{
+		if (left < right)
+			printf("%d, ", array[left]);
+		else
+			printf("%d", array[left]);
+		left = left + 1;
+	}
+	printf("\n");
 }
 /**
  * binary_search - performs binary search over a given array
@@ -28,24 +28,24 @@ void print_array(int *array, int left, int right)
  */
 int binary_search(int *array, size_t size, int value)
 {
-    int begin, end, middle;
+	int begin, end, middle;
 
-    if (array == NULL)
-        return (-1);
+	if (array == NULL)
+		return (-1);
 
-    begin = 0;
-    end = (int)size - 1;
-    while (begin <= end)
-    {
-        printf("Searching in array: ");
-        print_array(array, begin, end);
-        middle = (double)((begin + end) / 2);
-        if (array[middle] == value)
-            return ((int)middle);
-        else if (value > array[middle])
-            begin = middle + 1;
-        else
-            end = middle - 1;
-    }
-    return (-1);
+	begin = 0;
+	end = (int)size - 1;
+	while (begin <= end)
+	{
+		printf("Searching in array: ");
+		print_array(array, begin, end);
+		middle = (double)((begin + end) / 2);
+		if (array[middle] == value)
+			return ((int)middle);
+		else if (value > array[middle])
+			begin = middle + 1;
+		else
+			end = middle - 1;
+	}
+	return (-1);
 }
